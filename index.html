@@ -4,67 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <p>Hola Mundo!!</p>
-    <div class="container">
-        <!-- card one hermit -->
-        <div class="tarot-card">
-          <img src="https://cdn.pixabay.com/photo/2021/02/15/07/52/hermit-6016941_960_720.jpg">
-        </div>
-        <!-- card two temperance -->
-        <div class="tarot-card shuffle">
-          <img src="https://cdn.pixabay.com/photo/2021/02/15/07/42/temperance-6016917_960_720.jpg">
-        </div>
-        <!-- card three hanged-man -->
-        <div class="tarot-card">
-          <img src="https://cdn.pixabay.com/photo/2021/02/15/07/52/hanged-man-6016939_960_720.jpg">
-        </div>
-        <!-- card four hierophant -->
-        <div class="tarot-card">
-          <img src="https://cdn.pixabay.com/photo/2021/02/15/07/53/hierophant-6016942_960_720.jpg">
-        </div>
-      <!--   <h1>Click to Shuffle</h1> -->
-      </div>
-<link rel="stylesheet" href="style.css">
-<script src="script">
-$(document).ready(function () {
-var count = 0;
-$(".tarot-card").click(function() {
-  var card = $(this);
-  if(count < 4) {
-   $(this).removeClass("top").addClass("bottom");
-    count++;
-  }
-  if(count == 4) {
-   $("div").removeClass("bottom");
-    count = 0;
-  }
-  shuffle(card);
-});
-});
-function shuffle(card) {
-    TweenLite.fromTo(
-        card, 
-        0.6, 
-        {
-        x:410, 
-        y:-15, 
-        ease: Expo.easeOut}, 
-        {
-        x:0,
-        y:0,
-        ease: Expo.easeIn});
-};
-</script>
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Oxlahun Cauac</title>
 </head>
 <body>
@@ -117,8 +56,7 @@ function shuffle(card) {
       <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/98e5c036046217eafa34f23165441293f5debfe2d234869c517f0db5a1a23676?placeholderIfAbsent=true&apiKey=9c8cf102c95a466ba3fa90335506490b" alt="Social media icon 3" class="social-icon icon-3" />
     </div>
   </section>
-<script src="script">
-
+<script src="script.js">
 </script>
 </body>
 </html>
